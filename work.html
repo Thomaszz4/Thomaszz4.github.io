@@ -2,14 +2,15 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>work</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<title>work</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -77,6 +78,7 @@ div.hr:focus { cursor: none; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
@@ -86,7 +88,6 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -100,6 +101,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
@@ -150,13 +152,16 @@ table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 @media print { 
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignObject { font-size: var(--mermaid-font-zoom); }
 
 
 :root {
@@ -352,24 +357,24 @@ table tr:nth-child(2n),
 thead {
     background-color: #f8f8f8;
 }
-table tr th {
+table th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
     margin: 0;
     padding: 6px 13px;
 }
-table tr td {
+table td {
     border: 1px solid #dfe2e5;
     margin: 0;
     padding: 6px 13px;
 }
-table tr th:first-child,
-table tr td:first-child {
+table th:first-child,
+table td:first-child {
     margin-top: 0;
 }
-table tr th:last-child,
-table tr td:last-child {
+table th:last-child,
+table td:last-child {
     margin-bottom: 0;
 }
 
@@ -539,10 +544,10 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
-
+ :root {--mermaid-font-zoom:1em ;} 
 </style>
 </head>
 <body class='typora-export'>
-<div id='write'  class=''><h1><a name="奋斗的小猪猪" class="md-header-anchor"></a><span>奋斗的小猪猪</span></h1><h2><a name="写在最前面" class="md-header-anchor"></a><span>写在最前面</span></h2><p><span>妞妞嘞，因为异地恋所以猪猪觉得妞妞可能会感觉不到猪猪，所以猪猪想通过这个小版块来让妞妞看到猪猪每天都在做什么事情，也是一种相互监督的好习惯的啦，妞妞也可以把你的计划发布到这里来哦，然后我们两个人比赛。嘻嘻嘻。猪猪希望这个小版块能够给妞妞带来开心的体验，也能够缓解异地恋的各种思念，让妞妞感受到安全感。猪猪爱你</span></p><h2><a name="20201213" class="md-header-anchor"></a><span>2020.12.13</span></h2><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>ENT 的2000字论文，周三得交了啦，占比百分之60， 之前的presentation已经结束占百分之40，今天打算大概看一下需要回答的4个问题，然后大概写一下</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>MFE的coursework， 挺重要的因为格式题型和期末考试的一样, 占比百分之35， 应该会在ENT快完成或者已经完成的情况下才会去写，因为比较熟悉，所以放在后面</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+<div id='write'  class=''><h1><a name="奋斗的小猪猪" class="md-header-anchor"></a><span>奋斗的小猪猪</span></h1><h2><a name="写在最前面" class="md-header-anchor"></a><span>写在最前面</span></h2><p><span>妞妞嘞，因为异地恋所以猪猪觉得妞妞可能会感觉不到猪猪，所以猪猪想通过这个小版块来让妞妞看到猪猪每天都在做什么事情，也是一种相互监督的好习惯的啦，妞妞也可以把你的计划发布到这里来哦，然后我们两个人比赛。嘻嘻嘻。猪猪希望这个小版块能够给妞妞带来开心的体验，也能够缓解异地恋的各种思念，让妞妞感受到安全感。猪猪爱你</span></p><h2><a name="20201217" class="md-header-anchor"></a><span>2020.12.17</span></h2><h3><a name="妞妞" class="md-header-anchor"></a><span>妞妞</span></h3><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>管理信息系统概述复习</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>货金复习</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>财管大概复习</span></p></li></ul><h3><a name="猪猪" class="md-header-anchor"></a><span>猪猪</span></h3><p><span>稍后更新</span></p><h2><a name="20201213" class="md-header-anchor"></a><span>2020.12.13</span></h2><ul><li class='md-task-list-item task-list-item task-list-done' ><input type='checkbox' checked/><p><span>ENT 的2000字论文，周三得交了啦，占比百分之60， 之前的presentation已经结束占百分之40，今天打算大概看一下需要回答的4个问题，然后大概写一下</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>MFE的coursework， 挺重要的因为格式题型和期末考试的一样, 占比百分之35， 应该会在ENT快完成或者已经完成的情况下才会去写，因为比较熟悉，所以放在后面</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
 </body>
 </html>
