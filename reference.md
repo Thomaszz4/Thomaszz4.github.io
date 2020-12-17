@@ -1,4 +1,4 @@
-# Linux
+# linux
 
 ## Usages
 
@@ -32,6 +32,16 @@
 
 
 5. `! export` : next time commands begin with export
+
+6. `lsof -i:80`: to check what process occupies this port, use `kill PID` to stop this process
+
+   ```shell
+   COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+   nginx   1041 root   11u  IPv4  20043      0t0  TCP *:http (LISTEN)
+   nginx   2299  www   11u  IPv4  20043      0t0  TCP *:http (LISTEN)
+   ```
+
+7. 
 
 ## Add environment path
 
@@ -287,6 +297,70 @@ Strikethrough: `~~flat~~`
 Task list: `- []`
 
 color text: `$\color{#FF3030}{red}$`
+
+# Nginx
+
+install nginx for ubuntu I am not sure if we could just using `sudo apt-get install nginx`, because according to the Official website, there are some pre operations, as follows:
+
+```shell
+sudo apt install curl gnupg2 ca-certificates lsb-release
+curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+sudo apt-key fingerprint ABF5BD827BD9BF62
+sudo apt update
+sudo apt install nginx
+```
+
+Config: change the default port and file location
+
+```shell
+# nginx 1.18.0
+vim /etc/nginx/conf.d/default.conf
+########
+server {
+    listen       80;
+    server_name  localhost;
+
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /opt/Thomaszz4.github.io/;
+        index  index.html;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+```
 
 # GO
 
