@@ -1,19 +1,9 @@
 # Lots of Things
 
-## Contacts
-
-| name     | who     | contacts | some thing about he/she |
-| -------- | ------- | -------- | ----------------------- |
-| 张川惠子 | My Girl | Wechat   | My Love                 |
-
-## thing to remenber 
-
 | date                    | content             |
 | ----------------------- | ------------------- |
 | 寒假                    | 妞妞想去万象城滑冰  |
 | January 15 - January 17 | play with my niuniu |
-
-
 
 # Plans
 
