@@ -185,6 +185,22 @@ np.delect(a, 0) # [2,3,4,5,6]
 np.delect(a, [2,3]) # [1,2,5,6]
 ```
 
+## flask
+
+basic flask project
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('test.html')
+
+app.run()
+```
+
 
 
 # iTerm2

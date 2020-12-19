@@ -45,6 +45,26 @@ pip uninstall h5py
 pip install h5py==2.8.0
 ```
 
+## flask
+
+Happen:
+
+`self.socket.bind(self.server_address)
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known`
+
+SOLOTION:
+
+```python
+# when more than 2 thish blocks occur, this ERROR happened
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/main')
+def main():
+    return render_template('main.html')
+```
+
 
 
 
