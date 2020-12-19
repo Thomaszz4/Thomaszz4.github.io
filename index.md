@@ -9,6 +9,7 @@
 | Reference      | 这是猪猪技术学习的记录手册                     | [reference](reference.html) |
 | Lots of Things | things and long term plans                     | [LT](note.html)             |
 | Log            | Important update information                   | [log](log.html)             |
+| Error          | some errors I met                              | [error](errors.html)        |
 
 
 
