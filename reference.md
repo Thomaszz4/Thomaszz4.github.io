@@ -167,7 +167,13 @@ for i in range(len(a)-1, -1, -1):
 """
 ```
 
+## pip
 
+Generate requirements.txt
+
+```shell
+pip freeze > requirements.txt
+```
 
 ## numpy
 
