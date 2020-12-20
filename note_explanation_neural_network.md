@@ -24,7 +24,15 @@ Grad-CAM can output two types of attribution maps from XCM architecture: one rel
 
 The approaches based on back-propagation are seen as the state-of-the-art explainability methods for deep learn- ing models 
 
+## identified topic and how
 
+give an explanation process of the classification
+
+Train a classification model and extracted the weights layer wise 
+
+Does the neural network really learning what we want ??? Probably not 
+
+Understanding the data 
 
 ## supplement
 
