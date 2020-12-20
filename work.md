@@ -8,7 +8,7 @@
 
 |          | 🐷    | 👶    |
 | -------- | ---- | ---- |
-| Counting | 2    | 0    |
+| Counting | 5    | 0    |
 
 ## 2020.12.18（此安排直到1月20号）
 
@@ -25,7 +25,10 @@
 
 ### Attendence for reading papers
 
+#### [note for explainable neural network](note_explanation_neural_network.html)
+
 - [x] 2020.12.19
+- [x] 2020.12.20
 
 ## 2020.12.17
 
