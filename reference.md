@@ -102,7 +102,11 @@ for `zsh`:
 | --------- | ----- | ------- |
 |           |       |         |
 
+### echo
 
+`echo 'hello' >> 123.txt`: write 'hello' after the end of the file 123.txt
+
+`echo 'hello' > 123.txt`: replaced the content of file 123.txt
 
 # vim
 
@@ -201,7 +205,39 @@ def index():
 app.run()
 ```
 
+variable
 
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/hello/<name>')
+def hello_name(name):
+   return 'Hello %s!' % name
+
+if __name__ == '__main__':
+   app.run(debug = True)
+```
+
+## os
+
+current work path: `os.getcwd()`
+
+# HTML5
+
+**form: process the input from users**
+
+```html
+<form action = "login" method = "post">
+	<p>Enter comments:</p>
+	<p><input type = "text" name = "comments" /></p>
+	<p><input type = "submit" value = "submit" /></p>
+</form>
+```
+
+1. it has three type. `text`, `radio` and `submit` basic usage `<input type="text" name="firstname">`
+2. `action` defines a function to deal with the form
+3. `method` defines the type of http, `POST` or `GET`
 
 # iTerm2
 
