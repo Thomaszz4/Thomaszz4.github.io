@@ -2,6 +2,51 @@
 
 ## 2020.12.20
 
+update comment function 2.0
+
+```python
+from flask import Flask, request, render_template
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('test_index.html')
+
+@app.route('/test.html')
+def add():
+    return render_template('test.html')
+
+@app.route('/add_successfully', methods=['POST'])
+def add_comment():
+    with open('/Users/huangqiming/Desktop/web/comments.txt', 'w') as fr:
+        fr.write(request.form.get('message'))
+    return "Successfully add comments"
+
+if __name__ == '__main__':
+    app.run()
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='./type.css'>
+</head>
+<body>
+<div style="width:100%;text-align:center">
+    <h1>Please Comment</h1>
+    <form action="http://127.0.0.1:5000/add_successfully" method="post" enctype="multipart/form-data">
+      <textarea name="message" rows="2" class="question" id="msg"
+                required autocomplete="off" style="height: 300px; width: 500px"></textarea><br>
+      <input type="submit" value="Submit!" />
+    </form>
+</div>
+</body>
+</html>
+```
+
 update comment function and prepare for the website used flask back-end
 
 ```python
