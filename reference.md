@@ -356,6 +356,8 @@ Task list: `- []`
 
 color text: `$\color{#FF3030}{red}$`
 
+<font color=#FF7F00>color text</font>  : `<font color=#FF3030></font>`
+
 # Nginx
 
 install nginx for ubuntu I am not sure if we could just using `sudo apt-get install nginx`, because according to the Official website, there are some pre operations, as follows:
@@ -573,8 +575,4 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
    fmt.Printf("%v\n", a[:6])
    
    ```
-
-   
-
-5. a
 
