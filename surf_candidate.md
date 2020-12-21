@@ -10,3 +10,19 @@
 | $\color{#FF7F50}{JIMIN\ XIAO}$ | image/video processing, computer vision, deep learning, looking for self-motivated PhD student |                                                              | ASSOCIATE PROFESSOR            |
 | QIUFENG WANG                   | pattern recognition, machine learning, language modeling, document analysis and recognition, OCR |                                                              | ASSOCIATE PROFESSOR            |
 
+## Summer Reasearch
+
+| School/Country | Tutot          | Research Interest                              | Contact                              |
+| -------------- | -------------- | ---------------------------------------------- | ------------------------------------ |
+| NUS            | Vaibhav RAJAN  | Deep Learning In Healthcare and Bioinformatics | http://www.comp.nus.edu.sg/~vaibhav  |
+| NUS            | LEK Hsiang Hui | Natural Language Processing                    | http://www.comp.nus.edu.sg/~lekhsian |
+|                |                |                                                |                                      |
+|                |                |                                                |                                      |
+|                |                |                                                |                                      |
+|                |                |                                                |                                      |
+|                |                |                                                |                                      |
+|                |                |                                                |                                      |
+|                |                |                                                |                                      |
+
+
+

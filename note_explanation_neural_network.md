@@ -38,6 +38,10 @@ Understanding the data
 
 虽然这个GAP不是新的技术，但是在论文《Learning Deep Features for Discriminative Localization 》中，他们发现了GAP的一个作用，能保留空间信息并且定位（localization）?
 
+CNN Visualization: https://poloclub.github.io/cnn-explainer/
+
+我们企图通过不同的手段来解释这些既有的黑盒算法，从而来解释这些黑盒模型的决策依据。比较典型的两种方式是敏感性分析（Sensitivity Analysis）和基于梯度的方法（Gradient-based Methods -> saliency map）
+
 ## concepts
 
 Saliency Maps
@@ -50,7 +54,7 @@ Capsule Network
 
 > four types of explanation mathods:  https://www.youtube.com/watch?v=AFC8yWzypss
 
-​	perturbation-Based: mask each part of the image, and classifiy 
+​	perturbation-Based: mask each part of the image, and classifiy -> Sensitivity Analysis
 
 ​	Function-Based
 
@@ -65,4 +69,12 @@ Capsule Network
 Meta-explanation
 
 neuralizing k-means
+
+## thinking
+
+线性回归是一个可解释性的模型，例如我们搜集于房价相关的十个类别的数据，那么当我们线性回归以后，
+
+> 通过我们的学习，CHAS排在第二大的位置，相当于是临河的房子房价越高，不临河的房子房价就比较低
+
+我们就知道，<font color=#B22222>怎么样做可以达到更好的效果</font> 。这是可解释性的第一个验证方式。在CNN里呢？
 
