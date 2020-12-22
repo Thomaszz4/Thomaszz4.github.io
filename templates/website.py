@@ -16,6 +16,7 @@ def add():
 
 @app.route('/add_successfully', methods=['POST'])
 def add_comment():
-    with open('/Users/huangqiming/Desktop/web/comments.txt', 'w') as fr:
-        fr.write(request.form.get('message'))
-    return "Successfully add comments"
+    #with open('/Users/huangqiming/Desktop/web/comments.txt', 'w') as fr:
+    with open('/www/Thomaszz4.github.io/comments.txt', 'w') as fr:
+      fr.write(request.form.get('message'))
+      return "Successfully add comments"

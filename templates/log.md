@@ -1,5 +1,9 @@
 # Logs
 
+## 2020.12.22
+
+finished flask transform and implemented comment function 2.0
+
 ## 2020.12.20
 
 update comment function 2.0
