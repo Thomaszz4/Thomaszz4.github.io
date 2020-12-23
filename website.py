@@ -60,4 +60,5 @@ def surf():
     return render_template('surf_candidate.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port='80')
+    #app.run()
