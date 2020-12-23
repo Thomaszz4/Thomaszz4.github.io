@@ -51,5 +51,13 @@ def log():
 def errors():
     return render_template('errors.html')
 
+@app.route('/note_explanation_neural_network.html')
+def note_for_explaination():
+    return render_template('note_explanation_neural_network.html')
+
+@app.route('/surf_candidate.html')
+def surf():
+    return render_template('surf_candidate.html')
+
 if __name__ == '__main__':
     app.run()
