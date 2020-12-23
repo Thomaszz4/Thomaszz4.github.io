@@ -64,7 +64,7 @@ Capsule Network
 
 ​	comput some **relevence value** and sum of a prediction, **deep taylor decomposition** 
 
-​	LRP : Layer-wise Relevance Propagation
+​	LRP : <font color=#B22222>Layer-wise Relevance Propagation</font>
 
 Meta-explanation
 
@@ -77,4 +77,11 @@ neuralizing k-means
 > 通过我们的学习，CHAS排在第二大的位置，相当于是临河的房子房价越高，不临河的房子房价就比较低
 
 我们就知道，<font color=#B22222>怎么样做可以达到更好的效果</font> 。这是可解释性的第一个验证方式。在CNN里呢？
+
+## path
+
+1. explaiable neural network
+2. how to show the explanation of a neural network
+3. find some explaiable model (machine learnign, linear regression)
+4. try to use linear regression to show the explanation of convolutional neural network(value and positon, change value or position to improve the prediction probability), using Layer-wise Relevance Propagation
 
