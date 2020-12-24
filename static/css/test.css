@@ -18,7 +18,7 @@
     height: 300px;
 }
 
-.header{
+.head{
     background-color: #b4654d;
     color: #ffffff;
     text-align: center;
@@ -59,7 +59,6 @@
     height: 100%;
     width: 50%;
     float: left;
-/*    background-color: #b4654d;*/
 }
 
 #new_things{
@@ -84,7 +83,6 @@
     float: left;
     height: 600px;
     width: 300px;
-    /*background-color: #4183C4;*/
     padding-top: 100px;
 }
 
@@ -100,6 +98,5 @@
 #index_img{
     height: 600px;
     width: 100%;
-    /*background-color: #b4654d;*/
     text-align: center;
 }
