@@ -9,7 +9,7 @@ def access():
 @app.route('/check', methods=['POST'])
 def check():
     if request.form.get('password') == 'zhuzhu520':
-        return render_template('index.html')
+        return render_template('main.html')
     else:
         return render_template('check_wrong.html')
 
