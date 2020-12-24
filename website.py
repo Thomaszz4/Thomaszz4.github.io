@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def access():
-    return render_template('check.html')
+    return render_template('index.html')
 
 @app.route('/check', methods=['POST'])
 def check():
