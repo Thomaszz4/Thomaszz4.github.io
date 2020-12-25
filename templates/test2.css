@@ -1,0 +1,128 @@
+#background {
+	height: 880px;
+    width: 400px;
+/*   background-color: #999999; */
+}
+
+#header {
+    width: 100%;
+    height: 11%;
+/*   background-color: #B5D6FC; */
+}
+
+#content {
+	width: 100%;
+	height: 45%;
+/* 	background-color: #008000; */
+}
+
+#a {
+	border-radius: 10px;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	float: left;
+	height: 100%;
+	width: 60%;
+	background-color: #3385eb;
+}
+
+#b {
+	border-radius: 10px;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;	
+	height: 100%;
+	width: 40%;
+	background-color: #ff6c00;
+}
+
+#c_1 {
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+/* 	background-color: red; */
+}
+
+#c_2 {
+	border-radius: 10px;
+	float: right;
+	display: -webkit-box;
+	height: 100%;
+	width: 50%;
+	background-color: blue;
+}
+
+#c_11 {
+	border-radius: 10px;
+	height: 50%;
+	width: 100%;
+	background-color: yellow;
+}
+
+#c_12 {
+	border-radius: 10px;
+	height: 50%;
+	width: 100%;
+	background-color: orange;
+}
+
+#day {
+	border-radius: 15px;
+	height: 20%;
+	width: 100%;
+	background-color: palevioletred;	
+}
+
+#last {
+	border-radius: 10px;
+	height: 15%;
+	width: 100%;
+	background-color: chocolate;	
+}
+
+#buttom {
+	border-radius: 10px;
+	height: 9%;
+	width: 100%;
+	background-color: orange;
+}
+
+#a span {
+	font-weight: 700;
+    position: relative;
+    left: 10%;
+    font-family: tahoma;
+    font-size: 145%;
+    color: #FFFFFF;
+}
+
+#b span {
+	font-weight: 700;
+	position: relative;
+	font-family: tahoma;
+	font-size: 145%;
+	color: #FFFFFF;
+}
+
+#img_1 {
+	position: relative;
+	left: 20%;
+	border-radius: 5px;
+	height: 80%;
+	width: 35%;
+	background-color: orange;
+}
+
+#a div {
+    position: relative;
+    top: -61%;
+    left: -20%;
+    height: 77%;
+    width: 36%;
+/*    background-color: olive; */
+}
+
+#a div img {
+	height: 300%;
+	width: 300%;
+}
